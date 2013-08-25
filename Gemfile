@@ -1,9 +1,15 @@
 #source 'https://rubygems.org'
 source 'https://ruby.taobao.org'
-
+require 'rbconfig'
 group :development, :test do
   gem 'mysql'
   gem 'rspec-rails', '~> 2.14.0'
+  gem 'guard-rspec'
+  gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+
 end
 group :test do
   gem 'selenium-webdriver'
@@ -42,7 +48,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 # Use ActiveModel has_secure_password
