@@ -8,7 +8,7 @@ group :development, :test do
   #gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
   #gem 'spork-rails', '3.2.1'
   #gem 'guard-spork'
-  #gem 'childprocess'
+  #gem 'childprocess', '3.1.1'
 
 end
 group :test do
@@ -19,8 +19,6 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.1'
-
-
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
@@ -54,7 +52,7 @@ group :production do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
