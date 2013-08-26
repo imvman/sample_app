@@ -4,11 +4,11 @@ require 'rbconfig'
 group :development, :test do
   gem 'mysql'
   gem 'rspec-rails', '~> 2.14.0'
-  gem 'guard-rspec'
-  gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
-  gem 'spork-rails'
-  gem 'guard-spork'
-  gem 'childprocess'
+  #gem 'guard-rspec'
+  #gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
+  #gem 'spork-rails', '3.2.1'
+  #gem 'guard-spork'
+  #gem 'childprocess'
 
 end
 group :test do
@@ -18,6 +18,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass', '2.3.2.1'
+
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
